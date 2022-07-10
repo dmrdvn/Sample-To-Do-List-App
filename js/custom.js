@@ -22,7 +22,7 @@ showTasks();
 
 addNote.onclick = () => {
    
-    let userData = inputBox.value //get input data
+    let userData = inputBox.value //get input datas
     let getLocalStorage = localStorage.getItem("New Todo"); //get local storage
 
     if(getLocalStorage == null) {
