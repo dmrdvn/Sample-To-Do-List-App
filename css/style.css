@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8);
+}
+
+.wrapper {
+    margin:  120px auto;
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+/* Header */
+.wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+     margin: 20px 0;
+}
+
+.inputField input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 18px;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* List */
+.wrapper .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span {
+    position: absolute;
+    right: -45px;
+    color: white;
+    width: 45px;
+    height: 100%;
+    text-align: center;
+    background: #e74c3c;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.todoList li:hover span {
+    right: 0px;
+}
+
+/* Footer */
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.footer button {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
